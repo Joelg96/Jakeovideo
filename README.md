@@ -1,2 +1,2 @@
 # JM-Photography
-Jake's Photography Website files
+Jake's Photography Website files.
