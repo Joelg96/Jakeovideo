@@ -1,2 +1,4 @@
-# JM-Photography
-Jake's Photography Website files
+# Jakeovideo videography website
+
+Jakeovideo.com 
+
