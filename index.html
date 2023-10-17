@@ -33,23 +33,30 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow">
         <div class="container-lg">
             <a class="navbar-brand fw-bold fs-4 mr-auto" href="#">JakeoVideo</a>
-            <div class="dropdown">
-                <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" data-bs-display="static"
-                    ria-expanded="false">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-lg-end.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-end">
-                    <li><button class="dropdown-item" type="button" href="#overview">Overview</button></li>
-                    <li><button class="dropdown-item" type="button" href="#about">About <i
-                                class="fas fa-user-circle"></i></button></li>
-                    <li><button class="dropdown-item" type="button" href="#most-recent">Latest work <i class="fas fa-film"></i></button></li>
-                    <li><button class="dropdown-item" type="button" href="#services">Services <i
-                                class="fas fa-concierge-bell"></i></button></li>
-                    <li><button class="dropdown-item" type="button" href="#contact">Contact <i
-                                class="far fa-paper-plane"></i></button></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overview">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About <i class="fas fa-user-circle"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#latest">Latest work <i class="fas fa-film"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services <i class="fas fa-concierge-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact <i class="far fa-paper-plane"></i></a>
+                    </li>
                 </ul>
             </div>
-        </div>
         </div>
     </nav>
     <!----------------- End of Navigation --------------->
@@ -63,18 +70,20 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
         </video>
         <div class="container-fluid py-5">
             <div class="row min-vh-100 align-items-center align-content-center">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="overview_title animate__animated animate__fadeInDownBig"> Hi, it's me Jake</h2>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text text-center">
+                    <h2 class="overview_title animate__animated animate__fadeInDownBig">
+                        Hi, it's me Jake</h2>
                     <p class="overview_desc animate__animated animate__fadeInUpBig animate__slow">
                         I am a professional freelance videographer in Georgia</p>
-                    <a href="#contact" class="btn btn-sm animate__animated animate__fadeIn animate__slow" style="animation-delay: 2s;">
+                    <a href="#contact" class="btn ovr-btn btn-sm animate__animated animate__fadeIn animate__slow"
+                        style="animation-delay: 2s; color: #FFFFFF;">
                         Contact <i class="far fa-paper-plane"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!----------------- End of overview ------------------->
 
     <!----------------- About section ------------------->
@@ -147,20 +156,20 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                                 <img src="assets/img/projects-car-1.4.webp" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carousel-latest-1" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-latest-1"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button"
-                            data-bs-target="#carousel-latest-1" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-latest-1"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
             </div>
-            
+
 
             <!-- Second Carousel -->
             <div class="col-md-6 col-lg-4 mb-4">
@@ -186,7 +195,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     <!----------------- End of Services ------------------->
 
     <!----------------- Contact --------------------------->
-    
+
     <!----------------- End of Contact -------------------->
 
 

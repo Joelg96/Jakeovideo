@@ -34,15 +34,33 @@ colors used:
     opacity: 0.5;
 }
 
-.dropdown-item.active {
-    color: #212F3C;
+ul.navbar-nav {
+    margin-left: auto;
 }
 
-.dropdown-item.active:hover {
-    color: #1F618D;
+a.nav-link {
+    color: #EEEEEE;
+    opacity: 1;
+}
+
+.hero-text{
+    color:#EEEEEE;
+}
+
+/* Add the custom-btn class to apply styles only on hover */
+.ovr-btn:hover {
+    background-color: transparent; /* Make the background transparent on hover */
+    color: white; /* Text color on hover */
+    border: 1px solid white; /* Add an outline on hover */
 }
 
 
+
+
+
+.fa-paper-plane{
+    color:#EEEEEE;
+}
 
 /********************** End of Classes ************************************/
 
