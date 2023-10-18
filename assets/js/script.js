@@ -45,14 +45,14 @@ function sendMessage(event) {
         sendersubject: document.querySelector("#subject").value,
         sendermessage: document.querySelector("#message").value,
     };
-    
+
     // Send the form data using Email.js
     emailjs.send(serviceID, templateID, params)
         .then(function (response) {
             console.log("Email sent successfully:", response);
             // Display a confirmation message to the user
             alert('Thank you, ' + params['sendername'] + '! Your message has been sent. I should get back to you soon!');
-            
+
             // Reset the form or perform other actions as needed
             event.target.reset();  // Reset the form
         })
@@ -61,6 +61,6 @@ function sendMessage(event) {
             alert("OH NO! An error occurred! Your email could not be sent. Please try again or contact the email provided.");
             // Handle errors or show an error message to the user
         });
-// Attach the sendMessage function to the form submit event
-document.querySelector("#contact-form form").addEventListener('submit', sendMessage);
-    }
+    // Attach the sendMessage function to the form submit event
+    document.querySelector("#contact-form form").addEventListener('submit', sendMessage);
+}
