@@ -13,7 +13,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JakeoVideo | Jacob Montejano Wedding videographer</title>
+    <title>JakeoVideo | Wedding videographer</title>
+    <link rel="icon" type="image/png" href="/assets/img/icons/logo-camera-icon.png">
     <meta name="description"
         content="I am a dedicated videographer and photographer based in Central Georgia, offering personalized wedding services. My one-on-one approach ensures a unique, fun experience and attention to detail that is hard to find elsewhere. Let's capture the magic of your special day together!">
     <meta name="keywords"
@@ -70,9 +71,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     <!----------------- End of Navigation --------------->
 
     <!----------------- overview section ------------------->
-    <section id="overview" class="bgimage">
+    <section class="bgimage" id="overview">
         <video autoplay muted loop id="video-background">
-            <source src="assets/video/overview-bg.webm" type="video/webm">
             <source src="assets/video/overview-bg.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -82,7 +82,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                     <h2 class="overview_title animate__animated animate__fadeInLeft">
                         Hi, it's me Jake</h2>
                     <p class="overview_desc animate__animated animate__fadeInLeft Big animate__slow">
-                        I am a professional freelance videographer in Georgia</p>
+                        I am a professional freelance wedding videographer in Georgia</p>
                     <a href="#contact" class="btn ovr-btn btn-sm animate__animated animate__fadeIn animate__slow"
                         style="animation-delay: 2s; color: #FFFFFF;">
                         Contact <i class="far fa-paper-plane"></i>
@@ -95,7 +95,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     <!----------------- End of overview ------------------->
 
     <!----------------- About section ------------------->
-    <section id="about" class="about py-5">
+    <section class="about py-5" id="about">
         <div class="container-lg py-4">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -116,11 +116,11 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                         wait to be a part of it!</p>
                     <div class="about-social-icons fs-4">
                         <!-- Add your social icons here with links -->
-                        <a href="https://www.instagram.com/jakeovideo/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="#contact"><i class="fa fa-envelope"></i>
-                        </a>
+                        <a href="https://www.instagram.com/jakeovideo/" target="_blank"><i class="fab fa-instagram"
+                                style="color: #212F3C;"></i></a>
+                        <a href="#contact"><i class="fa fa-envelope" style="color: #212F3C;"></i></a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -128,12 +128,12 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     <!----------------- End of about ------------------->
 
     <!----------------- Latest work -------------------->
-    <section id="latest" class="latest">
+    <section class="latest" id="latest">
         <div class="container-lg">
             <!-- Video Section -->
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="latest-title text-center">
+                    <div class="section-title text-center">
                         <h2 class="mb-5 mt-5">Latest work</h2>
                     </div>
                 </div>
@@ -143,51 +143,107 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                     <div class="latest-video">
                         <!-------- REPLACE 'video-source.mp4' with the actual video -------->
                         <video controls class="w-100">
-                            <source src="video-source.mp4" type="video/mp4">
+                            <source src="/assets/video/video-placeholder-wedding.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                 </div>
             </div>
             <!-- Images -->
-            <div class="row">
-                <div class="col-sm-5 col-md-6 col-lg-3 mb-4 mt-4">
-                    <div class="latest-item">
-                        <img src="assets/img/projects-car-1.webp" class="d-block w-100" width="400" height="392" alt="wedding: Bride and groom back to back.">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-sm-5 col-md-6 col-lg-3 mb-4 mt-4">
+                        <div class="latest-item">
+                            <img src="assets/img/projects-car-1.webp" class="d-block w-100 latest-img"
+                                alt="wedding: Bride and groom back to back." data-bs-toggle="modal"
+                                data-bs-target="#modalImage1">
+                            <div class="frame"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-5 col-md-6 col-lg-3 mb-4 mt-4">
-                    <div class="latest-item">
-                        <img src="assets/img/projects-car-1.2.webp" class="d-block w-100" width="400" height="392" alt="Bride looking down.">
+                    <div class="col-sm-5 col-md-6 col-lg-3 mb-4 mt-4">
+                        <div class="latest-item">
+                            <img src="assets/img/projects-car-1.2.webp" class="d-block w-100 latest-img"
+                                alt="Bride looking down." data-bs-toggle="modal" data-bs-target="#modalImage2">
+                            <div class="frame"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-5 col-md-6 col-lg-3 mb-4 mt-4">
-                    <div class="latest-item">
-                        <img src="assets/img/projects-car-1.3.webp" class="d-block w-100" width="400" height="392" alt="Bride smiling holding flowers.">
+                    <div class="col-sm-5 col-md-6 col-lg-3 mb-4 mt-4">
+                        <div class="latest-item">
+                            <img src="assets/img/projects-car-1.3.webp" class="d-block w-100 latest-img"
+                                alt="Bride smiling holding flowers." data-bs-toggle="modal"
+                                data-bs-target="#modalImage3">
+                            <div class="frame"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-5 col-md-6 col-lg-3 mb-4 mt-4">
-                    <div class="latest-item">
-                        <img src="assets/img/projects-car-1.4.webp" class="d-block w-100" width="400" height="392" alt="Wedding couple smiling.">
+                    <div class="col-sm-5 col-md-6 col-lg-3 mb-4 mt-4">
+                        <div class="latest-item">
+                            <img src="assets/img/projects-car-1.4.webp" class="d-block w-100 latest-img"
+                                alt="Wedding couple smiling." data-bs-toggle="modal" data-bs-target="#modalImage4">
+                            <div class="frame"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <!-------------- End Most Recents -------------------->
 
     <!----------------- Services ------------------->
-
-
-    <!----------------- End of Services ------------------->
-
-    <!----------------- Contact --------------------------->
-    <section id="contact" class="contact py-5">
+    <section class="services py-5" id="services">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="contact-title text-center">
+                    <div class="section-title text-center">
+                        <h2 class="mb-5 mt-5">What I do</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item shadow-sm p-4 rounded bg-white">
+                        <div class="services-icon my-3 fs-2">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">Simplified Wedding Package</h3>
+                        <p class="text-muted">
+                            The Simplified Wedding package is designed for
+                            couples who value the beauty of simplicity.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item shadow-sm p-4 rounded bg-white">
+                        <div class="services-icon my-3 fs-2">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="fs-5 py-2">Classic Wedding Package</h3>
+                        <p class="text-muted">
+                            Ideal for couples who want to relive their
+                            traditional wedding day with a touch of cinematic
+                            charm.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="services-item shadow-sm p-4 rounded bg-white">
+                        <div class="services-icon my-3 fs-2">
+                            <i class="fas fa-church"></i></i>
+                        </div>
+                        <h3 class="fs-5 py-2">Luxury Wedding Experience</h3>
+                        <p class="text-muted">
+                            This experience is tailored for couples who seek the
+                            height of cinematic excellence and storytelling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------- End of Services ------------------->
+
+    <!----------------- Contact --------------------------->
+    <section class="contact py-5" id="contact">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
                         <h2 class="mb-5 mt-5">Contact me</h2>
                     </div>
                 </div>
@@ -209,7 +265,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                         </div>
                         <div class="text ms-3">
                             <h3 class="fs-5">Phone</h3>
-                            <p class="text-muted">123-456-7890</p>
+                            <p class="text-muted">(760) 424-9569</p>
                         </div>
                     </div>
                     <div class="contact-item d-flex mb-3">
@@ -267,14 +323,40 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
         </div>
     </section>
     <!----------------- End of Contact -------------------->
+
     <!----------------- Footer ---------------------------->
-
-
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4 fs-3">
+                <a href="https://www.instagram.com/jakeovideo/" target="_blank">
+                    <i class="footer-icon fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="creative-property">
+                Created with ❤️ by <a href="https://www.joelgoode-dev.com" target="_blank">Joel Goode</a>
+                <a href="mailto:jgoodewebsites@gmail.com" class="email-link"><i class="fas fa-envelope"></i></a> |
+                Check out more on my <a href="https://github.com/Joelg96" target="_blank">GitHub</a>!
+            </div>
+        </div>
+    </footer>
     <!----------------- End of Footer --------------------->
 
-
-
-
+    <!-- Modal Placeholder -->
+    <div class="modal fade" id="latest-img" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" id="close-modal-btn" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="d-block w-100 modal-img" alt="Modal Image">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Bootstrap and custom script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
