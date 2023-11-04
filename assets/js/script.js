@@ -9,15 +9,41 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 **/
 
 
-// Function for setting up the modals
+// Define a function to set the video start time
+function setVideoStartTime() {
+    // Get a reference to the video element
+    const video = document.getElementById("video-background");
 
+    // Listen for the 'loadedmetadata' event
+    video.addEventListener("loadedmetadata", function () {
+        // Set the desired start time (in seconds)
+        const startTime = 3;
+
+        // Check if the video duration is greater than the desired start time
+        if (video.duration >= startTime) {
+            // Set the 'currentTime' property to the desired start time
+            video.currentTime = startTime;
+        }
+    });
+}
+
+// Call the function to set the video start time when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", setVideoStartTime);
+
+// Function for setting up the modals
 function setupModals() {
     document.addEventListener("click", function (e) {
         if (e.target.classList.contains("latest-img")) {
             const src = e.target.getAttribute("src");
             document.querySelector(".modal-img").src = src;
             const myModal = new bootstrap.Modal(document.getElementById('latest-img'));
-            myModal.show();
+
+            try {
+                myModal.show();
+            } catch (error) {
+                console.error("Error showing modal:", error);
+                // Handle the error or display a message to the user
+            }
         }
     });
 }
@@ -25,9 +51,8 @@ function setupModals() {
 // Call the function to set up the dynamic modals
 setupModals();
 
-// Function for sending an email notifaction from contact form
+// Function for sending an email notification from the contact form
 // Initialize Email.js outside of the function
-
 function sendMessage(event) {
     emailjs.init("HQ2ZljQ_MCooUqhCw");  // Replace with your actual public key
     event.preventDefault();  // Prevent the form from submitting the traditional way
@@ -59,9 +84,7 @@ function sendMessage(event) {
             alert("OH NO! An error occurred! Your email could not be sent. Please try again or contact the email provided.");
             // Handle errors or show an error message to the user
         });
-    // Attach the sendMessage function to the form submit event
-    document.querySelector("#contact-form form").addEventListener('submit', sendMessage);
 }
 
-// Call the function to add "Last Updated" to the footer
-addLastUpdatedToFooter();
+// Attach the sendMessage function to the form submit event
+document.querySelector("#contact-form form").addEventListener('submit', sendMessage);
