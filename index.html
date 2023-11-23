@@ -23,23 +23,23 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     <meta property="og:title" content="JakeoVideo Wedding Videography & Photography in Central Georgia" />
     <meta property="og:description"
         content="I am a dedicated solo videographer and photographer based in Central Georgia, offering personalized wedding services. My one-on-one approach ensures a unique, fun experience and attention to detail that is hard to find elsewhere. Let's capture the magic of your special day together." />
-    <!------------- Stylesheets ------------------>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!----- Font awesome ------>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!--- Google fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
+    <!------------- Stylesheets ------------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
     <!------------------- Navigation --------------->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg">
         <div class="container-lg">
             <a class="navbar-brand fw-bold fs-4 mr-auto" href="#">JakeoVideo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -48,7 +48,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto ">
+                <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#overview">Overview</a>
                     </li>
@@ -76,7 +76,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
             <source src="/assets/video/overview-bg-2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div class="container-fluid py-5">
+        <div class="container-fluid py-0">
             <div class="row min-vh-100 align-items-center align-content-center">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text text-center">
                     <h2 class="overview_title animate__animated animate__fadeInLeft">
@@ -97,12 +97,12 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     <!----------------- About section ------------------->
     <section class="about py-5" id="about">
         <div class="container-lg py-4">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img src="/assets/img/profile-jake.webp" alt="Jake" class="img-fluid rounded-circle about-img">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-img-container">
+                    <img src="/assets/img/about-me-pfp.webp" alt="Jake" class="img-fluid rounded-circle about-img">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h2 class="text-muted">About me</h2>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center text-lg-left">
+                    <h2 class="text-muted mb-3">About me</h2>
                     <p>Welcome to JakeoVideo, where my passion for capturing love stories comes to life. I'm not just a
                         wedding videographer and photographer; I'm your storyteller, your memory keeper, and your friend
                         on your journey to "I do."</p>
@@ -117,8 +117,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                     <div class="about-social-icons fs-4">
                         <!-- Add your social icons here with links -->
                         <a href="https://www.instagram.com/jakeovideo/" target="_blank"><i class="fab fa-instagram"
-                                style="color: #212F3C;"></i></a>
-                        <a href="#contact"><i class="fa fa-envelope" style="color: #212F3C;"></i></a>
+                                style="color: #1f618d;"></i></a>
+                        <a href="#contact"><i class="fa fa-envelope" style="color: #1f618d;"></i></a>
                     </div>
 
                 </div>
@@ -142,7 +142,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                 <div class="col-lg-8">
                     <div class="latest-video">
                         <!-------- REPLACE 'video-source.mp4' with the actual video -------->
-                        <video controls class="w-100">
+                        <video controls playsinline class="w-100">
                             <source src="/assets/video/video-placeholder-wedding.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -200,7 +200,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
             </div>
             <div class="row text-center">
                 <div class="col-md-6 col-lg-4">
-                    <div class="services-item shadow-sm p-4 rounded bg-white">
+                    <div class="services-item shadow-sm p-4 rounded bg-white mb-2">
                         <div class="services-icon my-3 fs-2">
                             <i class="fas fa-camera"></i>
                         </div>
@@ -211,7 +211,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="services-item shadow-sm p-4 rounded bg-white">
+                    <div class="services-item shadow-sm p-4 rounded bg-white mb-2">
                         <div class="services-icon my-3 fs-2">
                             <i class="fas fa-video"></i>
                         </div>
