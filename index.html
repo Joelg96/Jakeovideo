@@ -338,9 +338,9 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                 </a>
             </div>
             <div class="creative-property">
-                Created with ❤️ by <a href="https://www.joelgoode-dev.com" target="_blank">Joel Goode</a>
-                <a href="mailto:jgoodewebsites@gmail.com" class="email-link"><i class="fas fa-envelope"></i></a> |
-                Check out more on my <a href="https://github.com/Joelg96" target="_blank">GitHub</a>!
+                &copy; 2024 Joel Goode. All rights reserved. <a href="https://www.joelgoode-dev.com" target="_blank"></a> |
+                <a href="https://www.linkedin.com/in/joel-goode" class="email-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Joelg96" target="_blank" ><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
@@ -369,3 +369,30 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 </body>
 
 </html>
+
+
+import "./Footer.css";
+import linkedin_icon from "../../assets/img/contact-linkedin-icon.svg";
+import github_icon from "../../assets/img/footer-github-icon.svg";
+
+const Footer = () => {
+  return (
+    <div className="footer">
+      <p>&copy; 2024 Joel Goode. All rights reserved.</p>
+      <ul>
+        <a href="https://github.com/Joelg96">
+          <img className="footer-icon" src={github_icon} alt="LinkedIn Icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/joel-goode">
+          <img
+            className="footer-icon"
+            src={linkedin_icon}
+            alt="LinkedIn Icon for Joel Goode, the developer."
+          />
+        </a>
+      </ul>
+    </div>
+  );
+};
+
+export default Footer;
